@@ -1,11 +1,8 @@
 import { useParams } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Hero } from "@/components/sections/Hero";
-import { BrandSection } from "@/components/sections/BrandSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { ConsultationForm } from "@/components/ui/ConsultationForm";
-import { ServiceCard } from "@/components/ui/ServiceCard";
-import { Compass, Wrench, MessageSquare } from "lucide-react";
 import { motion } from "framer-motion";
 
 const environmentsData: Record<string, {
@@ -187,27 +184,6 @@ const environmentsData: Record<string, {
   },
 };
 
-const services = [
-  {
-    title: "Progettazione",
-    description: "Progettiamo insieme a te ogni dettaglio, trasformando i tuoi desideri in soluzioni concrete e personalizzate.",
-    icon: Compass,
-    href: "/servizi/progettazione"
-  },
-  {
-    title: "Montaggio",
-    description: "Installazione professionale con squadre esperte e attenzione ai dettagli in ogni fase.",
-    icon: Wrench,
-    href: "/servizi/montaggio"
-  },
-  {
-    title: "Consulenza",
-    description: "Ti guidiamo nella scelta dei materiali e delle soluzioni più adatte al tuo stile di vita.",
-    icon: MessageSquare,
-    href: "/servizi/consulenza"
-  },
-];
-
 const AmbientePage = () => {
   const { ambiente } = useParams<{ ambiente: string }>();
   const data = environmentsData[ambiente || "cucina"] || environmentsData.cucina;
@@ -355,46 +331,6 @@ const AmbientePage = () => {
           </div>
         </div>
       </section>
-
-      {/* Services */}
-      <section className="section-padding bg-secondary">
-        <div className="container-custom">
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="text-tortora-dark font-medium text-sm uppercase tracking-widest mb-4 block">
-              I Nostri Servizi
-            </span>
-            <h2 className="heading-2 text-foreground">
-              Come Possiamo Aiutarti
-            </h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-              >
-                <ServiceCard {...service} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Brands */}
-      <BrandSection 
-        title={`Brand per la ${data.title}`}
-        subtitle="I migliori marchi italiani e internazionali per realizzare il tuo progetto"
-      />
 
       {/* Form */}
       <section className="section-padding bg-background">

@@ -10,7 +10,7 @@ const megaMenuGroups = [
     label: "Prodotti",
     items: [
       { name: "Superfici", href: "/categoria/superfici", desc: "Gres, marmi, parquet" },
-      { name: "Arredo Bagno", href: "/categoria/arredo-bagno", desc: "Sanitari, mobili, rubinetteria" },
+      { name: "Arredo Bagno", href: "/categoria/arredo-bagno", desc: "Il nostro focus: sanitari, mobili e rubinetteria", featured: true },
       { name: "Porte e Infissi", href: "/categoria/porte-infissi", desc: "Porte interne, finestre" },
       { name: "Outdoor", href: "/categoria/outdoor", desc: "Pergole, pavimenti esterni" },
       { name: "Wellness", href: "/categoria/wellness", desc: "Saune, vasche, hammam" },
@@ -26,28 +26,13 @@ const megaMenuGroups = [
       { name: "Lavanderia", href: "/categoria/arredamento/lavanderia", desc: "Mobili e accessori" },
     ],
   },
-  {
-    label: "Servizi",
-    items: [
-      { name: "Progettazione", href: "/servizi/progettazione", desc: "Render 3D e consulenza" },
-      { name: "Montaggio", href: "/servizi/montaggio", desc: "Posa e installazione" },
-      { name: "Consulenza", href: "/servizi/consulenza", desc: "Supporto personalizzato" },
-    ],
-  },
 ];
 
 const directLinks = [
   { name: "Imprese Edili", href: "/imprese-edili" },
   { name: "Showroom", href: "/showroom" },
   { name: "Contatti", href: "/contatti" },
-];
-
-const allMobileLinks = [
-  { name: "Home", href: "/" },
-  ...megaMenuGroups.flatMap((g) =>
-    g.items.map((i) => ({ ...i, group: g.label }))
-  ),
-  ...directLinks,
+  { name: "E-commerce", href: "/e-commerce" },
 ];
 
 export const Navbar = () => {
@@ -102,7 +87,7 @@ export const Navbar = () => {
               {/* Mega Menu Dropdown */}
               {megaOpen && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3">
-                  <div className="bg-background border border-border rounded-xl shadow-xl p-6 min-w-[640px] grid grid-cols-3 gap-8">
+                  <div className="bg-background border border-border rounded-xl shadow-xl p-6 min-w-[640px] grid grid-cols-2 gap-8">
                     {megaMenuGroups.map((group) => (
                       <div key={group.label}>
                         <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground mb-3 block">
@@ -115,6 +100,7 @@ export const Navbar = () => {
                               to={item.href}
                               className={cn(
                                 "group rounded-lg px-3 py-2 transition-colors hover:bg-secondary",
+                                item.featured && "bg-secondary/70 ring-1 ring-tortora/40",
                                 isActive(item.href) && "bg-secondary"
                               )}
                             >
@@ -123,6 +109,11 @@ export const Navbar = () => {
                                 isActive(item.href) ? "text-tortora-dark" : "text-foreground"
                               )}>
                                 {item.name}
+                                {item.featured && (
+                                  <span className="ml-2 inline-flex rounded-full bg-tortora px-2 py-0.5 text-[9px] uppercase tracking-[0.2em] text-primary">
+                                    Focus
+                                  </span>
+                                )}
                               </span>
                               <span className="text-xs text-muted-foreground">
                                 {item.desc}

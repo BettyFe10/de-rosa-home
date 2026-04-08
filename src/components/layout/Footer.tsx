@@ -9,14 +9,10 @@ const footerLinks = {
     { name: "Camera", href: "/ambienti/camera" },
     { name: "Living", href: "/ambienti/living" },
   ],
-  servizi: [
-    { name: "Progettazione", href: "/servizi/progettazione" },
-    { name: "Montaggio", href: "/servizi/montaggio" },
-    { name: "Consulenza", href: "/servizi/consulenza" },
-  ],
   azienda: [
     { name: "Showroom", href: "/showroom" },
     { name: "Contatti", href: "/contatti" },
+    { name: "E-commerce", href: "/e-commerce" },
   ],
 };
 
@@ -78,21 +74,8 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Servizi & Azienda */}
+          {/* Azienda */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-6">Servizi</h4>
-            <ul className="space-y-3 mb-8">
-              {footerLinks.servizi.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    to={link.href}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
             <h4 className="font-display text-lg font-semibold mb-6">Azienda</h4>
             <ul className="space-y-3">
               {footerLinks.azienda.map((link) => (

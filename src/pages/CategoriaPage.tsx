@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Hero } from "@/components/sections/Hero";
-import { BrandSection } from "@/components/sections/BrandSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { ConsultationForm } from "@/components/ui/ConsultationForm";
 import { motion } from "framer-motion";
@@ -471,6 +470,7 @@ const itemVariants = {
 
 const CategoriaPage = () => {
   const { categoria, sottocategoria } = useParams<{ categoria: string; sottocategoria?: string }>();
+  const isArredoBagnoPage = categoria === "arredo-bagno" && !sottocategoria;
   
   let data: CategoryData | undefined;
   
@@ -507,6 +507,11 @@ const CategoriaPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
+              {isArredoBagnoPage && (
+                <span className="mb-4 inline-flex rounded-full bg-tortora-light px-4 py-2 text-xs uppercase tracking-[0.25em] text-tortora-dark">
+                  Il nostro focus principale
+                </span>
+              )}
               <h2 className="heading-2 text-foreground mb-6">
                 {data.introTitle}
               </h2>
@@ -546,10 +551,10 @@ const CategoriaPage = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="text-tortora-dark font-medium text-sm uppercase tracking-widest mb-4 block">
-                La Nostra Offerta
+                {isArredoBagnoPage ? "La Nostra Eccellenza" : "La Nostra Offerta"}
               </span>
               <h2 className="heading-2 text-foreground">
-                Cosa Troverai da De Rosa Home
+                {isArredoBagnoPage ? "Le Soluzioni Bagno Più Richieste" : "Cosa Troverai da De Rosa Home"}
               </h2>
             </motion.div>
 
@@ -644,9 +649,6 @@ const CategoriaPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Brand Section */}
-      <BrandSection />
 
       {/* Consultation Form */}
       <section className="section-padding bg-secondary">

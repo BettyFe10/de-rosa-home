@@ -1,112 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* De Rosa Home Design System
-   Palette: Bianco caldo, grigio chiaro, tortora, nero/antracite
-   Typography: DM Sans (headings), Inter (body)
-*/
-
 @layer base {
   :root {
-    /* Warm White - Main background */
-    --background: 40 33% 98%;
-    --foreground: 220 20% 12%;
-
-    /* Card backgrounds */
-    --card: 40 25% 97%;
-    --card-foreground: 220 20% 12%;
-
-    /* Popover */
-    --popover: 40 33% 98%;
-    --popover-foreground: 220 20% 12%;
-
-    /* Primary - Antracite/Charcoal */
-    --primary: 220 15% 18%;
-    --primary-foreground: 40 33% 98%;
-
-    /* Secondary - Light Gray */
-    --secondary: 40 15% 94%;
-    --secondary-foreground: 220 20% 12%;
-
-    /* Muted - Soft gray */
-    --muted: 40 10% 92%;
-    --muted-foreground: 220 10% 45%;
-
-    /* Accent - Tortora/Taupe */
-    --accent: 30 15% 70%;
-    --accent-foreground: 220 20% 12%;
-
-    /* Tortora variations */
-    --tortora: 30 15% 65%;
-    --tortora-light: 30 12% 85%;
-    --tortora-dark: 30 18% 45%;
-
-    /* Destructive */
+    --font-brand-display: "Black Mango", "Pierson", "Aileron", "Roboto", Arial, sans-serif;
+    --font-brand-body: "Aileron", "Roboto", Arial, sans-serif;
+    --background: 38 50% 92%;
+    --foreground: 24 13% 25%;
+    --card: 42 36% 95%;
+    --card-foreground: 24 13% 25%;
+    --popover: 42 36% 95%;
+    --popover-foreground: 24 13% 25%;
+    --primary: 24 13% 25%;
+    --primary-foreground: 38 50% 92%;
+    --secondary: 33 19% 82%;
+    --secondary-foreground: 24 13% 25%;
+    --muted: 33 19% 82%;
+    --muted-foreground: 24 10% 38%;
+    --accent: 88 18% 61%;
+    --accent-foreground: 24 13% 25%;
+    --tortora: 31 53% 36%;
+    --tortora-light: 33 19% 82%;
+    --tortora-dark: 24 13% 25%;
     --destructive: 0 72% 51%;
-    --destructive-foreground: 40 33% 98%;
-
-    /* Borders and inputs */
-    --border: 30 12% 88%;
-    --input: 30 12% 88%;
-    --ring: 220 15% 18%;
-
-    --radius: 0.5rem;
-
-    /* Sidebar */
-    --sidebar-background: 40 25% 97%;
-    --sidebar-foreground: 220 20% 12%;
-    --sidebar-primary: 220 15% 18%;
-    --sidebar-primary-foreground: 40 33% 98%;
-    --sidebar-accent: 30 15% 70%;
-    --sidebar-accent-foreground: 220 20% 12%;
-    --sidebar-border: 30 12% 88%;
-    --sidebar-ring: 220 15% 18%;
+    --destructive-foreground: 38 50% 92%;
+    --border: 32 18% 76%;
+    --input: 32 18% 76%;
+    --ring: 24 13% 25%;
+    --radius: 1rem;
+    --sidebar-background: 42 36% 95%;
+    --sidebar-foreground: 24 13% 25%;
+    --sidebar-primary: 24 13% 25%;
+    --sidebar-primary-foreground: 38 50% 92%;
+    --sidebar-accent: 88 18% 61%;
+    --sidebar-accent-foreground: 24 13% 25%;
+    --sidebar-border: 32 18% 76%;
+    --sidebar-ring: 24 13% 25%;
   }
 
   .dark {
-    --background: 220 20% 8%;
-    --foreground: 40 33% 95%;
-
-    --card: 220 18% 12%;
-    --card-foreground: 40 33% 95%;
-
-    --popover: 220 20% 8%;
-    --popover-foreground: 40 33% 95%;
-
-    --primary: 40 33% 95%;
-    --primary-foreground: 220 20% 8%;
-
-    --secondary: 220 15% 18%;
-    --secondary-foreground: 40 33% 95%;
-
-    --muted: 220 15% 20%;
-    --muted-foreground: 40 10% 65%;
-
-    --accent: 30 15% 40%;
-    --accent-foreground: 40 33% 95%;
-
-    --tortora: 30 15% 50%;
-    --tortora-light: 30 12% 35%;
-    --tortora-dark: 30 18% 65%;
-
+    --background: 24 13% 15%;
+    --foreground: 38 30% 90%;
+    --card: 24 13% 18%;
+    --card-foreground: 38 30% 90%;
+    --popover: 24 13% 18%;
+    --popover-foreground: 38 30% 90%;
+    --primary: 38 30% 90%;
+    --primary-foreground: 24 13% 15%;
+    --secondary: 24 10% 24%;
+    --secondary-foreground: 38 30% 90%;
+    --muted: 24 10% 24%;
+    --muted-foreground: 33 16% 72%;
+    --accent: 180 26% 25%;
+    --accent-foreground: 38 30% 90%;
+    --tortora: 31 53% 44%;
+    --tortora-light: 24 10% 24%;
+    --tortora-dark: 38 30% 90%;
     --destructive: 0 62% 30%;
-    --destructive-foreground: 40 33% 95%;
-
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 40 33% 95%;
-
-    --sidebar-background: 220 18% 12%;
-    --sidebar-foreground: 40 33% 95%;
-    --sidebar-primary: 40 33% 95%;
-    --sidebar-primary-foreground: 220 20% 8%;
-    --sidebar-accent: 30 15% 40%;
-    --sidebar-accent-foreground: 40 33% 95%;
-    --sidebar-border: 220 15% 20%;
-    --sidebar-ring: 40 33% 95%;
+    --destructive-foreground: 38 30% 90%;
+    --border: 24 10% 28%;
+    --input: 24 10% 28%;
+    --ring: 38 30% 90%;
+    --sidebar-background: 24 13% 18%;
+    --sidebar-foreground: 38 30% 90%;
+    --sidebar-primary: 38 30% 90%;
+    --sidebar-primary-foreground: 24 13% 15%;
+    --sidebar-accent: 180 26% 25%;
+    --sidebar-accent-foreground: 38 30% 90%;
+    --sidebar-border: 24 10% 28%;
+    --sidebar-ring: 38 30% 90%;
   }
 }
 
@@ -121,11 +86,11 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-brand-body);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-brand-display);
     @apply font-bold tracking-tight;
   }
 }
