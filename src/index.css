@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* De Rosa Home Design System
+   Palette: Bianco caldo, grigio chiaro, tortora, nero/antracite
+   Typography: DM Sans (headings), Inter (body)
+*/
+
+@layer base {
+  :root {
+    /* Warm White - Main background */
+    --background: 40 33% 98%;
+    --foreground: 220 20% 12%;
+
+    /* Card backgrounds */
+    --card: 40 25% 97%;
+    --card-foreground: 220 20% 12%;
+
+    /* Popover */
+    --popover: 40 33% 98%;
+    --popover-foreground: 220 20% 12%;
+
+    /* Primary - Antracite/Charcoal */
+    --primary: 220 15% 18%;
+    --primary-foreground: 40 33% 98%;
+
+    /* Secondary - Light Gray */
+    --secondary: 40 15% 94%;
+    --secondary-foreground: 220 20% 12%;
+
+    /* Muted - Soft gray */
+    --muted: 40 10% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Accent - Tortora/Taupe */
+    --accent: 30 15% 70%;
+    --accent-foreground: 220 20% 12%;
+
+    /* Tortora variations */
+    --tortora: 30 15% 65%;
+    --tortora-light: 30 12% 85%;
+    --tortora-dark: 30 18% 45%;
+
+    /* Destructive */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 40 33% 98%;
+
+    /* Borders and inputs */
+    --border: 30 12% 88%;
+    --input: 30 12% 88%;
+    --ring: 220 15% 18%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 40 25% 97%;
+    --sidebar-foreground: 220 20% 12%;
+    --sidebar-primary: 220 15% 18%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 30 15% 70%;
+    --sidebar-accent-foreground: 220 20% 12%;
+    --sidebar-border: 30 12% 88%;
+    --sidebar-ring: 220 15% 18%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 40 33% 95%;
+
+    --card: 220 18% 12%;
+    --card-foreground: 40 33% 95%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 40 33% 95%;
+
+    --primary: 40 33% 95%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 40 33% 95%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 40 10% 65%;
+
+    --accent: 30 15% 40%;
+    --accent-foreground: 40 33% 95%;
+
+    --tortora: 30 15% 50%;
+    --tortora-light: 30 12% 35%;
+    --tortora-dark: 30 18% 65%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 40 33% 95%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 40 33% 95%;
+
+    --sidebar-background: 220 18% 12%;
+    --sidebar-foreground: 40 33% 95%;
+    --sidebar-primary: 40 33% 95%;
+    --sidebar-primary-foreground: 220 20% 8%;
+    --sidebar-accent: 30 15% 40%;
+    --sidebar-accent-foreground: 40 33% 95%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 40 33% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Sans', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-semibold leading-snug;
+  }
+
+  .body-large {
+    @apply text-lg md:text-xl leading-relaxed;
+  }
+
+  .body-text {
+    @apply text-base leading-relaxed;
+  }
+}
