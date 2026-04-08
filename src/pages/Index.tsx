@@ -11,7 +11,7 @@ const featuredCategory = {
   image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&h=900&fit=crop&auto=format",
   href: "/categoria/arredo-bagno",
   description: "Il nostro punto di forza: sanitari, mobili bagno, rubinetteria e termoarredo selezionati per progetti completi, eleganti e funzionali.",
-  badge: "Cavallo di battaglia",
+  badge: "Best Seller",
 };
 
 const categories = [
@@ -204,9 +204,10 @@ const Index = () => {
                 </div>
 
                 <div className="flex flex-col justify-center p-8 md:p-10">
-                  <span className="mb-4 inline-flex w-fit rounded-full bg-tortora-light px-4 py-2 text-xs uppercase tracking-[0.25em] text-tortora-dark">
-                    Arredo bagno
-                  </span>
+                  <span className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-tortora/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.1em] text-tortora-dark border border-tortora/20">
+                      <Star className="h-3 w-3 fill-tortora-dark" />
+                      {featuredCategory.badge}
+                    </span>
                   <h3 className="mb-4 font-display text-3xl font-bold text-foreground md:text-4xl">
                     Soluzioni bagno complete con consulenza dedicata
                   </h3>

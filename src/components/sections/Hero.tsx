@@ -106,7 +106,7 @@ export const Hero = ({
               <Link to={primaryCta.href}>
                 <Button 
                   size="lg" 
-                  className="bg-tortora hover:bg-tortora-dark text-foreground font-medium px-8"
+                  className="bg-tortora hover:bg-[#4a4038] text-white font-medium px-8 transition-colors duration-300"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   {primaryCta.text}

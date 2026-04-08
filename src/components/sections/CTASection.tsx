@@ -42,8 +42,8 @@ export const CTASection = ({
               <Button 
                 size="lg" 
                 className={isDark 
-                  ? "bg-tortora hover:bg-tortora-dark text-foreground font-medium px-8" 
-                  : "bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8"
+                  ? "bg-tortora hover:bg-[#d9d3c7] text-white hover:text-[#4a4038] font-medium px-8 transition-all duration-300 shadow-lg" 
+                  : "bg-primary hover:bg-[#8b5a2b] text-primary-foreground font-medium px-8 transition-all duration-300 shadow-lg"
                 }
               >
                 <Phone className="w-4 h-4 mr-2" />

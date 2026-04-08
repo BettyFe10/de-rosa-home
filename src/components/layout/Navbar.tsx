@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Phone, ChevronDown } from "lucide-react";
+import { Menu, Phone, ChevronDown, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -110,8 +110,9 @@ export const Navbar = () => {
                               )}>
                                 {item.name}
                                 {item.featured && (
-                                  <span className="ml-2 inline-flex rounded-full bg-tortora px-2 py-0.5 text-[9px] uppercase tracking-[0.2em] text-primary">
-                                    Focus
+                                  <span className="ml-2 inline-flex items-center gap-1 rounded-full bg-tortora/10 px-2 py-0.5 text-[9px] font-bold uppercase tracking-[0.1em] text-tortora-dark border border-tortora/20">
+                                    <Star className="h-2 w-2 fill-tortora-dark" />
+                                    Best Seller
                                   </span>
                                 )}
                               </span>

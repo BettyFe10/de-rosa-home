@@ -18,38 +18,44 @@ const footerLinks = {
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="container-custom section-padding">
+    <footer className="bg-[#4a4038] text-[#f5ede1] border-t border-white/5">
+      <div className="container-custom py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-6">
             <Link to="/" className="inline-block">
-              <span className="font-display text-2xl font-bold">
-                De Rosa <span className="text-tortora">Home</span>
+              <span className="font-display text-2xl font-bold text-[#f5ede1]">
+                De Rosa <span className="text-[#8b5a2b]">Home</span>
               </span>
             </Link>
-            <p className="text-primary-foreground/80 body-text">
+            <p className="text-[#f5ede1]/70 body-text leading-relaxed max-w-xs">
               Da oltre 30 anni creiamo ambienti unici che raccontano la tua storia. 
-              Design italiano, qualità artigianale.
+              Design italiano, qualità artigianale e consulenza dedicata.
             </p>
             <div className="flex gap-4">
               <a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                href="https://facebook.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#8b5a2b] transition-all duration-300 border border-white/10"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                href="https://instagram.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#8b5a2b] transition-all duration-300 border border-white/10"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                href="https://linkedin.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#8b5a2b] transition-all duration-300 border border-white/10"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -59,14 +65,15 @@ export const Footer = () => {
 
           {/* Ambienti */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-6">Ambienti</h4>
+            <h4 className="font-display text-lg font-semibold mb-6 text-[#f5ede1] uppercase tracking-widest text-sm">Ambienti</h4>
             <ul className="space-y-3">
               {footerLinks.ambienti.map((link) => (
                 <li key={link.name}>
                   <Link 
                     to={link.href}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                    className="text-[#f5ede1]/60 hover:text-[#f5ede1] transition-colors flex items-center gap-2 group text-sm"
                   >
+                    <span className="h-px w-0 bg-[#8b5a2b] transition-all group-hover:w-3" />
                     {link.name}
                   </Link>
                 </li>
@@ -76,14 +83,15 @@ export const Footer = () => {
 
           {/* Azienda */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-6">Azienda</h4>
+            <h4 className="font-display text-lg font-semibold mb-6 text-[#f5ede1] uppercase tracking-widest text-sm">Azienda</h4>
             <ul className="space-y-3">
               {footerLinks.azienda.map((link) => (
                 <li key={link.name}>
                   <Link 
                     to={link.href}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                    className="text-[#f5ede1]/60 hover:text-[#f5ede1] transition-colors flex items-center gap-2 group text-sm"
                   >
+                    <span className="h-px w-0 bg-[#8b5a2b] transition-all group-hover:w-3" />
                     {link.name}
                   </Link>
                 </li>
@@ -93,47 +101,43 @@ export const Footer = () => {
 
           {/* Contatti */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-6">Contatti</h4>
+            <h4 className="font-display text-lg font-semibold mb-6 text-[#f5ede1] uppercase tracking-widest text-sm">Contatti</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 mt-0.5 text-tortora" />
-                <span className="text-primary-foreground/80">
-                  Via Roma 123<br />
-                  80100 Napoli (NA)
+                <MapPin className="w-5 h-5 mt-0.5 text-[#8b5a2b]" />
+                <span className="text-[#f5ede1]/60 leading-snug text-sm">
+                  Via Campana, 123<br />
+                  80010 Quarto (NA)
                 </span>
               </li>
               <li>
                 <a 
-                  href="tel:+390811234567" 
-                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  href="tel:+390810000000" 
+                  className="flex items-center gap-3 text-[#f5ede1]/60 hover:text-[#f5ede1] transition-colors text-sm"
                 >
-                  <Phone className="w-5 h-5 text-tortora" />
-                  +39 081 123 4567
+                  <Phone className="w-5 h-5 text-[#8b5a2b]" />
+                  081 0000000
                 </a>
               </li>
               <li>
                 <a 
                   href="mailto:info@derosahome.it" 
-                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  className="flex items-center gap-3 text-[#f5ede1]/60 hover:text-[#f5ede1] transition-colors text-sm"
                 >
-                  <Mail className="w-5 h-5 text-tortora" />
+                  <Mail className="w-5 h-5 text-[#8b5a2b]" />
                   info@derosahome.it
                 </a>
               </li>
             </ul>
           </div>
         </div>
-
-        {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-primary-foreground/60">
-            © {new Date().getFullYear()} De Rosa Home. Tutti i diritti riservati. Sviluppato da BettyFe.
-          </p>
-          <div className="flex gap-6 text-sm text-primary-foreground/60">
-            <a href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary-foreground transition-colors">Cookie Policy</a>
-          </div>
-        </div>
+      </div>
+      
+      {/* Copyright */}
+      <div className="container-custom py-8 border-t border-white/5">
+        <p className="text-center text-[#f5ede1]/30 text-[10px] uppercase tracking-[0.2em]">
+          © {new Date().getFullYear()} De Rosa Srl. Tutti i diritti riservati. P.IVA 01234567890
+        </p>
       </div>
     </footer>
   );
