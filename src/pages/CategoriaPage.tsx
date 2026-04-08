@@ -297,7 +297,7 @@ const categoriesData: Record<string, CategoryData> = {
     heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&auto=format",
     introTitle: "Arredamento Completo: Ogni Ambiente, una Soluzione su Misura",
     introText: [
-      "L'arredamento rappresenta il cuore dell'attività di De Rosa Home: da oltre trent'anni progettiamo e realizziamo ambienti completi che riflettono la personalità e lo stile di vita dei nostri clienti. Dalla cucina al living, dalla camera da letto alla lavanderia, ogni spazio viene studiato con la stessa cura e attenzione ai dettagli per creare un'armonia complessiva che rende la tua casa un luogo unico.",
+      "L'arredamento rappresenta il cuore dell'attività di De Rosa Home: da oltre 50 anni progettiamo e realizziamo ambienti completi che riflettono la personalità e lo stile di vita dei nostri clienti. Dalla cucina al living, dalla camera da letto alla lavanderia, ogni spazio viene studiato con la stessa cura e attenzione ai dettagli per creare un'armonia complessiva che rende la tua casa un luogo unico.",
       "Il nostro approccio si distingue per la progettazione integrata: non proponiamo singoli mobili, ma ambienti completi dove ogni elemento dialoga con gli altri creando un risultato armonioso e funzionale. I nostri progettisti lavorano con te per comprendere le tue esigenze quotidiane, le tue preferenze estetiche e il tuo budget, sviluppando proposte personalizzate che puoi visualizzare in anteprima attraverso render 3D fotorealistici.",
       "Collaboriamo con i più prestigiosi brand dell'arredamento italiano e internazionale, garantendo una qualità costruttiva eccellente, materiali certificati e finiture che durano nel tempo. Ogni progetto viene seguito dall'ideazione al montaggio finale da un team dedicato che assicura il rispetto dei tempi e la massima qualità in ogni fase."
     ],
@@ -358,7 +358,7 @@ const arredamentoSubPages: Record<string, CategoryData> = {
     ],
     detailTitle: "Perché Affidarsi a De Rosa Home per la Tua Cucina",
     detailText: [
-      "Scegliere De Rosa Home per la progettazione della tua cucina significa affidarsi a professionisti con oltre trent'anni di esperienza nel settore. Il nostro team di progettisti utilizza software di ultima generazione per creare render 3D fotorealistici che ti permetteranno di vedere la tua cucina futura ancora prima che venga realizzata.",
+      "Scegliere De Rosa Home per la progettazione della tua cucina significa affidarsi a professionisti con oltre 50 anni di esperienza nel settore. Il nostro team di progettisti utilizza software di ultima generazione per creare render 3D fotorealistici che ti permetteranno di vedere la tua cucina futura ancora prima che venga realizzata.",
       "Ogni progetto include una consulenza personalizzata gratuita, durante la quale analizziamo insieme lo spazio disponibile, le tue preferenze estetiche e le esigenze funzionali. Proponiamo soluzioni innovative come cassetti estraibili, illuminazione LED integrata, colonne dispensa organizzate e angoli attrezzati.",
       "Il nostro servizio non termina con la consegna: le nostre squadre di montatori certificati eseguono l'installazione con precisione millimetrica. E con la nostra garanzia estesa, potrai goderti la tua nuova cucina con la tranquillità di un'assistenza sempre disponibile."
     ],
@@ -410,7 +410,7 @@ const arredamentoSubPages: Record<string, CategoryData> = {
     ],
     detailTitle: "De Rosa Home: Esperti nella Zona Notte",
     detailText: [
-      "La progettazione della zona notte richiede competenze specifiche che abbiamo sviluppato in oltre trent'anni di esperienza. Sappiamo che ogni persona ha esigenze diverse: chi preferisce armadi a ante battenti, chi scorrevoli; chi desidera una cabina armadio separata.",
+      "La progettazione della zona notte richiede competenze specifiche che abbiamo sviluppato in oltre 50 anni di esperienza. Sappiamo che ogni persona ha esigenze diverse: chi preferisce armadi a ante battenti, chi scorrevoli; chi desidera una cabina armadio separata.",
       "Lavoriamo con i migliori produttori italiani di letti, armadi componibili e complementi per la zona notte. Proponiamo materiali di pregio come pelli naturali, tessuti tecnici antimacchia e legni pregiati.",
       "Il nostro servizio comprende anche la consulenza sul sistema letto: ti aiutiamo a scegliere il materasso più adatto considerando postura, eventuali problematiche e preferenze personali."
     ],

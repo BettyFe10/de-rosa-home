@@ -110,7 +110,7 @@ const ImpreseEdili = () => {
               </h2>
               <div className="space-y-4 body-text text-muted-foreground">
                 <p>
-                  De Rosa Home è molto più di un semplice fornitore di materiali: siamo un partner strategico per le imprese edili che cercano qualità, affidabilità e un servizio completo per le loro realizzazioni. Da oltre trent'anni collaboriamo con costruttori, imprese di ristrutturazione e studi di architettura, fornendo materiali e soluzioni di alta gamma con condizioni commerciali dedicate.
+                  De Rosa Home è molto più di un semplice fornitore di materiali: siamo un partner strategico per le imprese edili che cercano qualità, affidabilità e un servizio completo per le loro realizzazioni. Da oltre 50 anni collaboriamo con costruttori, imprese di ristrutturazione e studi di architettura, fornendo materiali e soluzioni di alta gamma con condizioni commerciali dedicate.
                 </p>
                 <p>
                   La nostra esperienza nel settore ci permette di offrire un supporto che va oltre la semplice fornitura: affianchiamo le imprese nella scelta dei materiali più adatti a ogni progetto, gestiamo la logistica delle consegne in coordinamento con le fasi del cantiere e forniamo assistenza tecnica specializzata per garantire una posa in opera ottimale.
@@ -239,13 +239,13 @@ const ImpreseEdili = () => {
               </p>
               <div className="space-y-4 text-muted-foreground text-sm">
                 <p>
-                  <strong className="text-foreground">Email dedicata:</strong> imprese@derosahome.it
+                  <strong className="text-foreground">Email dedicata:</strong> imprese@derosahome.net
                 </p>
                 <p>
-                  <strong className="text-foreground">Telefono diretto:</strong> +39 081 XXX XXXX
+                  <strong className="text-foreground">Telefono diretto:</strong> +39 081 708 1770
                 </p>
                 <p>
-                  <strong className="text-foreground">Orari ufficio commerciale:</strong> Lun-Ven 9:00-18:00
+                  <strong className="text-foreground">Orari ufficio commerciale:</strong> Lun-Ven 8:30-19:00
                 </p>
               </div>
             </motion.div>

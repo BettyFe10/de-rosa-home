@@ -65,7 +65,7 @@ const reviews = [
 ];
 
 const stats = [
-  { value: "30+", label: "Anni di esperienza", icon: Clock },
+  { value: "50+", label: "Anni di storia", icon: Clock },
   { value: "1500+", label: "Progetti realizzati", icon: CheckCircle },
   { value: "98%", label: "Clienti soddisfatti", icon: Users },
   { value: "1", label: "Focus speciale sull'arredo bagno", icon: Bath },
@@ -87,7 +87,7 @@ const Index = () => {
       <Hero
         subtitle="Interior Design & Arredo Bagno"
         title="Materiali, arredi e progetti pensati per vivere meglio la casa"
-        description="Da oltre 30 anni accompagniamo privati e professionisti nella scelta di superfici, arredi e soluzioni bagno con uno stile chiaro, curato e concreto."
+        description="Da oltre 50 anni accompagniamo privati e professionisti nella scelta di superfici, arredi e soluzioni bagno con uno stile chiaro, curato e concreto."
         image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&auto=format"
         primaryCta={{ text: "Prenota Consulenza", href: "/contatti" }}
         secondaryCta={{ text: "Scopri lo Showroom", href: "/showroom" }}

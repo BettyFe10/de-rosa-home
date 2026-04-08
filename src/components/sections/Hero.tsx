@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
@@ -41,6 +42,22 @@ export const Hero = ({
   const alignClasses = {
     left: "text-left items-start",
     center: "text-center items-center",
+  };
+
+  const handleAnchorClick = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+    const id = href.replace("#", "");
+    const element = document.getElementById(id);
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
   };
 
   return (
@@ -103,19 +120,31 @@ export const Hero = ({
             transition={{ delay: 0.5 }}
           >
             {primaryCta && (
-              <Link to={primaryCta.href}>
+              primaryCta.href.startsWith("#") ? (
                 <Button 
+                  onClick={(e) => handleAnchorClick(e, primaryCta.href)}
                   size="lg" 
                   className="bg-tortora hover:bg-[#4a4038] text-white font-medium px-8 transition-colors duration-300"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   {primaryCta.text}
                 </Button>
-              </Link>
+              ) : (
+                <Link to={primaryCta.href}>
+                  <Button 
+                    size="lg" 
+                    className="bg-tortora hover:bg-[#4a4038] text-white font-medium px-8 transition-colors duration-300"
+                  >
+                    <Phone className="w-4 h-4 mr-2" />
+                    {primaryCta.text}
+                  </Button>
+                </Link>
+              )
             )}
             {secondaryCta && (
-              <Link to={secondaryCta.href}>
+              secondaryCta.href.startsWith("#") ? (
                 <Button 
+                  onClick={(e) => handleAnchorClick(e, secondaryCta.href)}
                   size="lg" 
                   variant="outline"
                   className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-medium px-8 transition-all duration-300"
@@ -123,7 +152,18 @@ export const Hero = ({
                   {secondaryCta.text}
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
-              </Link>
+              ) : (
+                <Link to={secondaryCta.href}>
+                  <Button 
+                    size="lg" 
+                    variant="outline"
+                    className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-medium px-8 transition-all duration-300"
+                  >
+                    {secondaryCta.text}
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
+              )
             )}
           </motion.div>
         </motion.div>

@@ -74,9 +74,9 @@ const Showroom = () => {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold text-foreground mb-1">Indirizzo</h3>
-                  <p className="text-muted-foreground">Via Roma 123, 80100 Napoli (NA)</p>
+                  <p className="text-muted-foreground">Via Masullo, 33A, 80010 Quarto (NA)</p>
                   <a 
-                    href="https://maps.google.com" 
+                    href="https://maps.google.com/?q=De+Rosa+Home+Quarto+Via+Masullo+33A" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-tortora-dark font-medium text-sm hover:underline mt-2 inline-block"
@@ -94,8 +94,8 @@ const Showroom = () => {
                 <div>
                   <h3 className="font-display font-semibold text-foreground mb-2">Orari di Apertura</h3>
                   <div className="space-y-1 text-muted-foreground text-sm">
-                    <p><strong>Lunedì - Venerdì:</strong> 9:30 - 13:00 / 15:30 - 19:30</p>
-                    <p><strong>Sabato:</strong> 9:30 - 13:00 / 16:00 - 20:00</p>
+                    <p><strong>Lunedì - Venerdì:</strong> 8:30 - 13:00 / 14:30 - 19:00</p>
+                    <p><strong>Sabato:</strong> 8:30 - 13:00</p>
                     <p><strong>Domenica:</strong> Chiuso</p>
                   </div>
                 </div>
@@ -110,18 +110,18 @@ const Showroom = () => {
                   <h3 className="font-display font-semibold text-foreground mb-2">Contatti</h3>
                   <div className="space-y-2">
                     <a 
-                      href="tel:+390811234567" 
+                      href="tel:+390817081770" 
                       className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
                     >
                       <Phone className="w-4 h-4" />
-                      +39 081 123 4567
+                      +39 081 708 1770
                     </a>
                     <a 
-                      href="mailto:info@derosahome.it" 
+                      href="mailto:info@derosahome.net" 
                       className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
                     >
                       <Mail className="w-4 h-4" />
-                      info@derosahome.it
+                      info@derosahome.net
                     </a>
                   </div>
                 </div>
@@ -234,14 +234,14 @@ const Showroom = () => {
                   <Car className="w-5 h-5 text-tortora-dark mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">In Auto</h4>
-                    <p className="text-sm text-muted-foreground">Uscita tangenziale Vomero. Parcheggio gratuito.</p>
+                    <p className="text-sm text-muted-foreground">Tangenziale uscita Quarto. Ampio parcheggio gratuito.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Train className="w-5 h-5 text-tortora-dark mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">Con i Mezzi</h4>
-                    <p className="text-sm text-muted-foreground">Metro Linea 1, fermata Vanvitelli. 5 min a piedi.</p>
+                    <p className="text-sm text-muted-foreground">Circumflegrea, fermata Quarto. 10 min a piedi.</p>
                   </div>
                 </div>
               </div>
@@ -253,13 +253,13 @@ const Showroom = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              {/* Map Placeholder */}
-              <div className="w-full h-[400px] bg-muted rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-                  <p className="text-muted-foreground font-medium">Mappa Interattiva</p>
-                  <p className="text-sm text-muted-foreground">Via Roma 123, 80100 Napoli</p>
-                </div>
+              {/* Image instead of map */}
+              <div className="w-full h-[400px] overflow-hidden rounded-lg shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop&auto=format" 
+                  alt="Showroom De Rosa Home"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
           </div>

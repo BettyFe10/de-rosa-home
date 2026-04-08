@@ -3,14 +3,15 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react
 
 const footerLinks = {
   ambienti: [
-    { name: "Cucina", href: "/ambienti/cucina" },
-    { name: "Bagno", href: "/ambienti/bagno" },
-    { name: "Soggiorno", href: "/ambienti/soggiorno" },
-    { name: "Camera", href: "/ambienti/camera" },
-    { name: "Living", href: "/ambienti/living" },
+    { name: "Arredo Bagno", href: "/categoria/arredo-bagno" },
+    { name: "Superfici", href: "/categoria/superfici" },
+    { name: "Cucina", href: "/categoria/arredamento/cucina" },
+    { name: "Living", href: "/categoria/arredamento/living" },
+    { name: "Outdoor", href: "/categoria/outdoor" },
   ],
   azienda: [
     { name: "Showroom", href: "/showroom" },
+    { name: "Imprese Edili", href: "/imprese-edili" },
     { name: "Contatti", href: "/contatti" },
     { name: "E-commerce", href: "/e-commerce" },
   ],
@@ -29,12 +30,12 @@ export const Footer = () => {
               </span>
             </Link>
             <p className="text-[#f5ede1]/70 body-text leading-relaxed max-w-xs">
-              Da oltre 30 anni creiamo ambienti unici che raccontano la tua storia. 
+              Da oltre 50 anni creiamo ambienti unici che raccontano la tua storia. 
               Design italiano, qualità artigianale e consulenza dedicata.
             </p>
             <div className="flex gap-4">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/derosaedilizia/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#8b5a2b] transition-all duration-300 border border-white/10"
@@ -43,7 +44,7 @@ export const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/derosahome/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#8b5a2b] transition-all duration-300 border border-white/10"
@@ -52,7 +53,7 @@ export const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/de-rosa-s-r-l-/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#8b5a2b] transition-all duration-300 border border-white/10"
@@ -106,26 +107,26 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 text-[#8b5a2b]" />
                 <span className="text-[#f5ede1]/60 leading-snug text-sm">
-                  Via Campana, 123<br />
+                  Via Masullo, 33A<br />
                   80010 Quarto (NA)
                 </span>
               </li>
               <li>
                 <a 
-                  href="tel:+390810000000" 
+                  href="tel:+390817081770" 
                   className="flex items-center gap-3 text-[#f5ede1]/60 hover:text-[#f5ede1] transition-colors text-sm"
                 >
                   <Phone className="w-5 h-5 text-[#8b5a2b]" />
-                  081 0000000
+                  081 708 1770
                 </a>
               </li>
               <li>
                 <a 
-                  href="mailto:info@derosahome.it" 
+                  href="mailto:info@derosahome.net" 
                   className="flex items-center gap-3 text-[#f5ede1]/60 hover:text-[#f5ede1] transition-colors text-sm"
                 >
                   <Mail className="w-5 h-5 text-[#8b5a2b]" />
-                  info@derosahome.it
+                  info@derosahome.net
                 </a>
               </li>
             </ul>
@@ -136,7 +137,7 @@ export const Footer = () => {
       {/* Copyright */}
       <div className="container-custom py-8 border-t border-white/5">
         <p className="text-center text-[#f5ede1]/30 text-[10px] uppercase tracking-[0.2em]">
-          © {new Date().getFullYear()} De Rosa Srl. Tutti i diritti riservati. P.IVA 01234567890
+          © {new Date().getFullYear()} De Rosa Home Srl. Tutti i diritti riservati. P.IVA 10214421215
         </p>
       </div>
     </footer>
