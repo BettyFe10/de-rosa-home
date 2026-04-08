@@ -24,10 +24,16 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <Link to="/" className="inline-block">
-              <span className="font-display text-2xl font-bold text-[#f5ede1]">
-                De Rosa <span className="text-[#8b5a2b]">Home</span>
-              </span>
+            <Link to="/" className="inline-block group">
+              <div className="flex flex-col items-center">
+                <span className="font-display text-2xl font-black tracking-tighter text-[#f5ede1] leading-none">
+                  DE ROSA
+                </span>
+                <div className="w-full h-0.5 bg-[#8b5a2b] my-1 scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                <span className="font-display text-[10px] font-medium tracking-[0.4em] text-[#8b5a2b] leading-none uppercase ml-1">
+                  HOME
+                </span>
+              </div>
             </Link>
             <p className="text-[#f5ede1]/70 body-text leading-relaxed max-w-xs">
               Da oltre 50 anni creiamo ambienti unici che raccontano la tua storia. 

@@ -50,10 +50,16 @@ export const Navbar = () => {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <span className="font-display text-2xl font-bold tracking-tight text-foreground">
-              De Rosa <span className="text-tortora-dark">Home</span>
-            </span>
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="flex flex-col items-center">
+              <span className="font-display text-2xl font-black tracking-tighter text-foreground leading-none">
+                DE ROSA
+              </span>
+              <div className="w-full h-0.5 bg-tortora-dark my-1 scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+              <span className="font-display text-[10px] font-medium tracking-[0.4em] text-tortora-dark leading-none uppercase ml-1">
+                HOME
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
