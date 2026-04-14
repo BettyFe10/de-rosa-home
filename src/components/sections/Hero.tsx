@@ -9,6 +9,8 @@ interface HeroProps {
   subtitle?: string;
   description?: string;
   image: string;
+  videoSrc?: string;
+  videoPoster?: string;
   primaryCta?: {
     text: string;
     href: string;
@@ -27,6 +29,8 @@ export const Hero = ({
   subtitle,
   description,
   image,
+  videoSrc,
+  videoPoster,
   primaryCta,
   secondaryCta,
   overlay = true,
@@ -64,11 +68,25 @@ export const Hero = ({
     <section className={`relative ${heightClasses[height]} flex items-center`}>
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
-          src={image} 
-          alt={title}
-          className="w-full h-full object-cover"
-        />
+        {videoSrc ? (
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={videoPoster ?? image}
+          >
+            <source src={videoSrc} type="video/mp4" />
+          </video>
+        ) : (
+          <img 
+            src={image} 
+            alt={title}
+            className="w-full h-full object-cover"
+          />
+        )}
         {overlay && (
           <div className="absolute inset-0 bg-gradient-to-r from-primary/70 via-primary/40 to-transparent" />
         )}

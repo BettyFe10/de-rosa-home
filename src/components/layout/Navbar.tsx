@@ -7,23 +7,34 @@ import { cn } from "@/lib/utils";
 
 const megaMenuGroups = [
   {
-    label: "Prodotti",
+    label: "Materiali",
     items: [
-      { name: "Superfici", href: "/categoria/superfici", desc: "Gres, marmi, parquet" },
-      { name: "Arredo Bagno", href: "/categoria/arredo-bagno", desc: "Il nostro focus: sanitari, mobili e rubinetteria", featured: true },
-      { name: "Porte e Infissi", href: "/categoria/porte-infissi", desc: "Porte interne, finestre" },
-      { name: "Outdoor", href: "/categoria/outdoor", desc: "Pergole, pavimenti esterni" },
-      { name: "Wellness", href: "/categoria/wellness", desc: "Saune, vasche, hammam" },
-      { name: "Caminetti", href: "/categoria/caminetti", desc: "Bioetanolo, legna, gas" },
+      { name: "Superfici", href: "/categoria/superfici", desc: "Gres, parquet, pietre, SPC, marmi e vetri" },
+      { name: "Carte da Parati", href: "/categoria/carte-da-parati", desc: "Texture e decorazioni per pareti" },
+      { name: "Porte e Infissi", href: "/categoria/porte-infissi", desc: "Serramenti, porte interne e sicurezza" },
+      { name: "Illuminazione", href: "/categoria/illuminazione", desc: "Luce tecnica e decorativa" },
+      { name: "Outdoor", href: "/categoria/outdoor", desc: "Pergole bioclimatiche e arredi esterno" },
+    ],
+  },
+  {
+    label: "Bagno & Benessere",
+    items: [
+      { name: "Arredo Bagno", href: "/categoria/arredo-bagno", desc: "Rubinetteria, igienici, mobili e box doccia", featured: true },
+      { name: "Ausili Bagno", href: "/categoria/ausili-bagno", desc: "Soluzioni bagno in sicurezza" },
+      { name: "Wellness", href: "/categoria/wellness", desc: "Bagno turco, saune e mini piscine" },
+      { name: "Termoarredi", href: "/categoria/termoarredi", desc: "Radiatori e scaldasalviette di design" },
+      { name: "Caminetti", href: "/categoria/caminetti", desc: "Legna, gas e bioetanolo" },
+      { name: "Stufe", href: "/categoria/stufe", desc: "Calore efficiente e controllato" },
     ],
   },
   {
     label: "Arredamento",
     items: [
-      { name: "Cucina", href: "/categoria/arredamento/cucina", desc: "Cucine su misura" },
-      { name: "Living", href: "/categoria/arredamento/living", desc: "Divani, librerie, tavoli" },
-      { name: "Camera da Letto", href: "/categoria/arredamento/camera", desc: "Letti, armadi, complementi" },
-      { name: "Lavanderia", href: "/categoria/arredamento/lavanderia", desc: "Mobili e accessori" },
+      { name: "Cucina", href: "/categoria/arredamento/cucina", desc: "Progettazione e cucine su misura" },
+      { name: "Zona Living", href: "/categoria/arredamento/living", desc: "Divani, pareti e tavoli" },
+      { name: "Zona Notte", href: "/categoria/arredamento/camera", desc: "Letti, armadi e cabine" },
+      { name: "Complementi", href: "/categoria/arredamento/complementi", desc: "Dettagli che completano l'ambiente" },
+      { name: "Lavanderia", href: "/categoria/arredamento/lavanderia", desc: "Soluzioni funzionali e su misura" },
     ],
   },
 ];
@@ -59,6 +70,9 @@ export const Navbar = () => {
               <span className="font-display text-[10px] font-medium tracking-[0.4em] text-tortora-dark leading-none uppercase ml-1">
                 HOME
               </span>
+              <span className="hidden md:block mt-2 text-[9px] font-medium uppercase tracking-[0.3em] text-muted-foreground">
+                La casa è la nostra storia
+              </span>
             </div>
           </Link>
 
@@ -93,7 +107,7 @@ export const Navbar = () => {
               {/* Mega Menu Dropdown */}
               {megaOpen && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3">
-                  <div className="bg-background border border-border rounded-xl shadow-xl p-6 min-w-[640px] grid grid-cols-2 gap-8">
+                  <div className="bg-background border border-border rounded-xl shadow-xl p-6 min-w-[900px] grid grid-cols-3 gap-8">
                     {megaMenuGroups.map((group) => (
                       <div key={group.label}>
                         <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground mb-3 block">

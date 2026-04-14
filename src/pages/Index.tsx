@@ -19,25 +19,43 @@ const categories = [
     title: "Superfici",
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=1000&fit=crop&auto=format",
     href: "/categoria/superfici",
-    description: "Pavimenti, rivestimenti, parquet e pietra naturale",
+    description: "Gres, parquet, pietre naturali, SPC, marmi e vetri",
+  },
+  {
+    title: "Carte da Parati",
+    image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=800&h=1000&fit=crop&auto=format",
+    href: "/categoria/carte-da-parati",
+    description: "Texture e decorazioni per pareti e ambienti",
   },
   {
     title: "Porte e Infissi",
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=1000&fit=crop&auto=format",
     href: "/categoria/porte-infissi",
-    description: "Sicurezza, isolamento e design per ogni apertura",
+    description: "Porte interne, serramenti, isolamento e sicurezza",
+  },
+  {
+    title: "Illuminazione",
+    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=1000&fit=crop&auto=format",
+    href: "/categoria/illuminazione",
+    description: "Luce tecnica, decorativa e d'atmosfera",
   },
   {
     title: "Outdoor",
     image: "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&h=1000&fit=crop&auto=format",
     href: "/categoria/outdoor",
-    description: "Pergole, tende, sedute, divani e tavoli",
+    description: "Arredo esterno, pergole bioclimatiche e cucine outdoor",
   },
   {
     title: "Wellness",
     image: "https://images.unsplash.com/photo-1600607688960-e095ff83135c?w=800&h=1000&fit=crop&auto=format",
     href: "/categoria/wellness",
-    description: "Mini piscine, saune, bagno turco e docce emozionali",
+    description: "Bagno turco, saune, mini piscine e relax",
+  },
+  {
+    title: "Termoarredi",
+    image: "https://images.unsplash.com/photo-1600607688960-e095ff83135c?w=800&h=1000&fit=crop&auto=format",
+    href: "/categoria/termoarredi",
+    description: "Radiatori e scaldasalviette di design",
   },
   {
     title: "Caminetti",
@@ -46,10 +64,22 @@ const categories = [
     description: "Calore e atmosfera con design contemporaneo",
   },
   {
+    title: "Stufe",
+    image: "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&h=1000&fit=crop&auto=format",
+    href: "/categoria/stufe",
+    description: "Soluzioni efficienti per il comfort domestico",
+  },
+  {
     title: "Arredamento",
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=1000&fit=crop&auto=format",
     href: "/categoria/arredamento",
-    description: "Cucina, living, camera da letto e lavanderia",
+    description: "Zona living, zona notte, cucine e complementi",
+  },
+  {
+    title: "Ausili Bagno",
+    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&h=1000&fit=crop&auto=format",
+    href: "/categoria/ausili-bagno",
+    description: "Soluzioni bagno in sicurezza e comfort",
   },
 ];
 
@@ -278,6 +308,64 @@ const Index = () => {
                 </Link>
               </motion.div>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-secondary">
+        <div className="container-custom">
+          <motion.div
+            className="mb-12 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="mb-4 block text-sm font-medium uppercase tracking-widest text-tortora-dark">
+              De Rosa Home
+            </span>
+            <h2 className="heading-2 mb-4 text-foreground">
+              Partner, progetti e appuntamenti
+            </h2>
+            <p className="body-large mx-auto max-w-3xl text-muted-foreground">
+              Collaborazioni selezionate, attività di progettazione e momenti dedicati per conoscere materiali e soluzioni dal vivo.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <motion.div variants={itemVariants} className="rounded-[1.75rem] border border-border bg-background p-6">
+              <h3 className="mb-2 font-display text-xl font-bold text-foreground">Brand Partner</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Selezioniamo marchi e collezioni coerenti con qualità, durata e stile.
+              </p>
+            </motion.div>
+
+            <motion.div variants={itemVariants} className="rounded-[1.75rem] border border-border bg-background p-6">
+              <h3 className="mb-2 font-display text-xl font-bold text-foreground">Architetago</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Collaborazioni e consulenze per un progetto chiaro, concreto e coordinato.
+              </p>
+            </motion.div>
+
+            <motion.div variants={itemVariants} className="rounded-[1.75rem] border border-border bg-background p-6">
+              <h3 className="mb-2 font-display text-xl font-bold text-foreground">Progetti Completati</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Selezione di realizzazioni: bagno, superfici e interior, dall'idea alla consegna.
+              </p>
+            </motion.div>
+
+            <motion.div variants={itemVariants} className="rounded-[1.75rem] border border-border bg-background p-6">
+              <h3 className="mb-2 font-display text-xl font-bold text-foreground">Eventi</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Open Day e appuntamenti speciali: Architetago + Fabrizio Mantone.
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </section>

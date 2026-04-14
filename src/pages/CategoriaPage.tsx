@@ -30,8 +30,8 @@ interface CategoryData {
 const categoriesData: Record<string, CategoryData> = {
   superfici: {
     title: "Superfici",
-    subtitle: "Pavimenti, Rivestimenti e Materiali Pregiati",
-    description: "Selezioniamo le migliori superfici per ogni ambiente: pavimenti, rivestimenti, parquet e pietra naturale di altissima qualità.",
+    subtitle: "Gres, Parquet, Pietre Naturali, SPC, Marmi e Vetri",
+    description: "Selezioniamo superfici e materiali per ogni ambiente: gres e grandi formati, parquet, pietre naturali e marmi, soluzioni SPC e vetri per progetti contemporanei e duraturi.",
     heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&auto=format",
     introTitle: "L'Eccellenza delle Superfici: Pavimenti e Rivestimenti per Ogni Ambiente",
     introText: [
@@ -62,23 +62,35 @@ const categoriesData: Record<string, CategoryData> = {
         image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&h=400&fit=crop&auto=format"
       },
       {
-        title: "Pietra Naturale",
+        title: "Marmi e Pietre Naturali",
         description: "Marmi, graniti, travertini e ardesie selezionati dalle migliori cave. Ogni lastra è un pezzo unico con venature e colorazioni irripetibili.",
         image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "SPC",
+        description: "Pavimenti SPC ad alte prestazioni: posa rapida, resistenza e look contemporaneo per ambienti dinamici e ristrutturazioni veloci.",
+        image: "https://images.unsplash.com/photo-1600607688960-e095ff83135c?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Vetri e Vetrate",
+        description: "Soluzioni in vetro per separazioni leggere, porte e complementi: trasparenze, finiture e dettagli su misura.",
+        image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop&auto=format"
       }
     ],
     features: [
       "Gres porcellanato in formati fino a 120x280 cm",
       "Parquet in legno massello e prefinito di alta gamma",
       "Marmi e pietre naturali selezionati dalle migliori cave",
+      "Soluzioni SPC per ristrutturazioni rapide e performance elevate",
+      "Vetri e vetrate su misura per progetti contemporanei",
       "Posa professionale con garanzia su tutta la lavorazione",
       "Consulenza tecnica gratuita per la scelta dei materiali",
     ]
   },
   "arredo-bagno": {
     title: "Arredo Bagno",
-    subtitle: "Sanitari, Rubinetteria e Termoarredo",
-    description: "Tutto per il tuo bagno: sanitari di design, rubinetterie di pregio e soluzioni di termoarredo che uniscono funzionalità ed estetica.",
+    subtitle: "Rubinetteria, Igienici, Mobili, Accessori e Box Doccia",
+    description: "Soluzioni complete per il bagno: rubinetteria, igienici, mobili e accessori, box doccia e termoarredo. Progetti curati, funzionali e coerenti con lo stile della casa.",
     heroImage: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1920&h=1080&fit=crop&auto=format",
     introTitle: "Arredo Bagno Completo: Sanitari, Rubinetteria e Termoarredo di Design",
     introText: [
@@ -104,15 +116,33 @@ const categoriesData: Record<string, CategoryData> = {
         image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop&auto=format"
       },
       {
+        title: "Mobili e Accessori Bagno",
+        description: "Mobili sospesi e a terra, colonne, specchi e accessori coordinati. Soluzioni su misura per ottimizzare lo spazio e valorizzare il progetto.",
+        image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Box Doccia",
+        description: "Box doccia e chiusure in vetro con profili minimali, finiture e misure personalizzate per docce walk-in e cabine complete.",
+        image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=600&h=400&fit=crop&auto=format"
+      },
+      {
         title: "Termoarredo",
         description: "Scaldasalviette e radiatori di design che uniscono efficienza energetica e valore estetico. Centinaia di colori e configurazioni disponibili.",
         image: "https://images.unsplash.com/photo-1600607688960-e095ff83135c?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Ausili Bagno",
+        description: "Ausili e soluzioni per il bagno in sicurezza: maniglioni, sedute, accessori e supporti pensati per comfort e autonomia.",
+        image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop&auto=format"
       }
     ],
     features: [
       "Sanitari con tecnologia rimless e trattamento antibatterico",
       "Rubinetterie con cartucce ceramiche e risparmio idrico",
       "Termoarredi di design con alta efficienza energetica",
+      "Mobili e accessori coordinati per progetti completi",
+      "Box doccia su misura e soluzioni walk-in",
+      "Ausili bagno per sicurezza e comfort quotidiano",
       "Installazione professionale con garanzia completa",
       "Ampia esposizione visibile nel nostro showroom",
     ]
@@ -341,6 +371,198 @@ const categoriesData: Record<string, CategoryData> = {
       "Progettazione integrata con render 3D fotorealistici",
     ]
   },
+  "carte-da-parati": {
+    title: "Carte da Parati",
+    subtitle: "Texture, Pattern e Soluzioni Decorative",
+    description: "Carte da parati, rivestimenti murali e finiture decorative per dare carattere agli ambienti con soluzioni contemporanee e su misura.",
+    heroImage: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=1920&h=1080&fit=crop&auto=format",
+    introTitle: "Pareti che Raccontano: Carta da Parati e Rivestimenti Decorativi",
+    introText: [
+      "Le pareti sono una superficie narrativa: texture, pattern e colori possono trasformare completamente la percezione di uno spazio. In De Rosa Home selezioniamo collezioni decorative e soluzioni tecniche per valorizzare living, camere, bagni e spazi commerciali con un risultato elegante e coerente.",
+      "Dalla carta vinilica lavabile alle texture materiche, fino a rivestimenti murali più tecnici, ti guidiamo nella scelta più adatta in base a ambiente, luce e manutenzione."
+    ],
+    detailTitle: "Materiali, Applicazione e Scelta Consapevole",
+    detailText: [
+      "La resa finale dipende tanto dal prodotto quanto dall'applicazione: per questo affianchiamo alla selezione estetica un supporto tecnico per materiali, fondi e posa, così da ottenere un risultato pulito e duraturo."
+    ],
+    subCategories: [
+      {
+        title: "Carte Viniliche",
+        description: "Soluzioni pratiche e resistenti, ideali anche per ambienti vissuti e facilmente pulibili.",
+        image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Texture Materiche",
+        description: "Effetti tessuto, pietra, cemento e superfici tattili per pareti che diventano protagoniste.",
+        image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Rivestimenti Decorativi",
+        description: "Pannelli e soluzioni decorative per progetti su misura e composizioni personalizzate.",
+        image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&h=400&fit=crop&auto=format"
+      }
+    ],
+    features: [
+      "Selezione di collezioni decorative contemporanee",
+      "Soluzioni lavabili e resistenti per ambienti specifici",
+      "Supporto tecnico su materiali, fondi e posa",
+      "Consulenza per composizioni e abbinamenti",
+      "Risultato coerente con il progetto d'interni",
+    ]
+  },
+  illuminazione: {
+    title: "Illuminazione",
+    subtitle: "Luce Tecnica e Decorativa",
+    description: "Progettiamo e selezioniamo soluzioni di illuminazione per valorizzare ogni ambiente: luce funzionale, scenografica e d'atmosfera.",
+    heroImage: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1920&h=1080&fit=crop&auto=format",
+    introTitle: "Illuminazione: Progettare la Luce Significa Progettare lo Spazio",
+    introText: [
+      "La luce definisce volumi, materiali e percezione degli ambienti. Un progetto di illuminazione ben studiato migliora comfort e funzionalità, creando anche atmosfere più calde e accoglienti.",
+      "In De Rosa Home ti accompagniamo nella scelta tra luce tecnica e decorativa, integrando punti luce, temperature colore e controlli in modo semplice e coerente."
+    ],
+    detailTitle: "Tecnica, Atmosfera e Controllo",
+    detailText: [
+      "Dalla luce puntuale su isole cucina e piani lavoro alla luce diffusa per il living, fino a soluzioni decorative per dare carattere: ogni scelta viene calibrata su abitudini, arredi e materiali."
+    ],
+    subCategories: [
+      {
+        title: "Luce Tecnica",
+        description: "Spot, strip LED, incassi e soluzioni per una luce precisa e funzionale.",
+        image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Luce Decorativa",
+        description: "Lampade sospese, da parete e da terra per un segno estetico forte e riconoscibile.",
+        image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Controllo e Atmosfere",
+        description: "Dimmer, scenari e soluzioni per gestire intensità e temperatura colore in modo intuitivo.",
+        image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=600&h=400&fit=crop&auto=format"
+      }
+    ],
+    features: [
+      "Progettazione luce coerente con materiali e arredi",
+      "Soluzioni LED efficienti e versatili",
+      "Scenari e dimmer per atmosfera e comfort",
+      "Consulenza su temperatura colore e resa cromatica",
+      "Integrazione con cucine, living e bagno",
+    ]
+  },
+  termoarredi: {
+    title: "Termoarredi",
+    subtitle: "Calore Funzionale e Design",
+    description: "Radiatori e scaldasalviette di design per riscaldare con stile: soluzioni efficienti e personalizzabili per bagno e ambienti living.",
+    heroImage: "https://images.unsplash.com/photo-1600607688960-e095ff83135c?w=1920&h=1080&fit=crop&auto=format",
+    introTitle: "Termoarredo: Quando il Calore Diventa Progetto",
+    introText: [
+      "Il termoarredo non è più un elemento tecnico da nascondere: oggi diventa parte del linguaggio estetico della casa. Proponiamo soluzioni che uniscono performance e design con finiture e colori coordinabili."
+    ],
+    detailTitle: "Efficienza, Finiture e Integrazione",
+    detailText: [
+      "Ti guidiamo nella scelta tra diverse potenze, tipologie e installazioni, mantenendo coerenza con rivestimenti, rubinetterie e arredo."
+    ],
+    subCategories: [
+      {
+        title: "Scaldasalviette",
+        description: "Soluzioni per il bagno, verticali e orizzontali, con finiture e colori personalizzabili.",
+        image: "https://images.unsplash.com/photo-1600607688960-e095ff83135c?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Radiatori di Design",
+        description: "Elementi scultorei e minimali per living e zone di passaggio, con alte prestazioni.",
+        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Soluzioni Elettriche",
+        description: "Termoarredi elettrici per comfort immediato e gestione semplice.",
+        image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&h=400&fit=crop&auto=format"
+      }
+    ],
+    features: [
+      "Termoarredi di design personalizzabili",
+      "Soluzioni bagno coordinate con il progetto",
+      "Supporto su potenze, installazioni e resa termica",
+      "Finiture e colori per coerenza estetica",
+      "Integrazione con arredo bagno e rivestimenti",
+    ]
+  },
+  stufe: {
+    title: "Stufe",
+    subtitle: "Calore, Efficienza e Controllo",
+    description: "Stufe e sistemi di riscaldamento per il comfort domestico: soluzioni efficienti e controllabili per ambienti contemporanei.",
+    heroImage: "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1920&h=1080&fit=crop&auto=format",
+    introTitle: "Stufe: Comfort Termico con Soluzioni Evolute",
+    introText: [
+      "Le stufe moderne uniscono efficienza, sicurezza e gestione semplice. Proponiamo soluzioni pensate per offrire comfort costante e un'estetica coerente con lo stile della casa."
+    ],
+    detailTitle: "Tecnologia e Integrazione",
+    detailText: [
+      "Dalla scelta della potenza alla collocazione, fino alla gestione: affianchiamo ogni progetto con supporto tecnico e consulenza in showroom."
+    ],
+    subCategories: [
+      {
+        title: "Stufe ad Alta Efficienza",
+        description: "Soluzioni progettate per massimizzare rendimento e comfort con consumi ottimizzati.",
+        image: "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Installazioni e Sicurezza",
+        description: "Supporto su installazione, normative e integrazione con l'ambiente domestico.",
+        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Controllo e Comfort",
+        description: "Gestione semplice e soluzioni per modulare il calore in base alle esigenze quotidiane.",
+        image: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=600&h=400&fit=crop&auto=format"
+      }
+    ],
+    features: [
+      "Soluzioni efficienti e moderne",
+      "Consulenza tecnica su potenza e collocazione",
+      "Supporto su installazione e sicurezza",
+      "Design integrabile in ogni stile",
+      "Gestione semplice e comfort costante",
+    ]
+  },
+  "ausili-bagno": {
+    title: "Ausili Bagno",
+    subtitle: "Comfort e Sicurezza in Ogni Dettaglio",
+    description: "Ausili e accessori per il bagno in sicurezza: soluzioni pensate per comfort, autonomia e prevenzione, senza rinunciare a un'estetica curata.",
+    heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1920&h=1080&fit=crop&auto=format",
+    introTitle: "Bagno in Sicurezza: Soluzioni Discrete e Funzionali",
+    introText: [
+      "Il bagno è uno degli ambienti più delicati della casa. Con ausili e accessori specifici è possibile aumentare sicurezza e comfort in modo semplice, discreto e coordinato con lo stile del progetto."
+    ],
+    detailTitle: "Soluzioni per Autonomia e Prevenzione",
+    detailText: [
+      "Proponiamo maniglioni, sedute e accessori tecnici selezionati per qualità e affidabilità, valutando insieme la configurazione migliore in base alle esigenze."
+    ],
+    subCategories: [
+      {
+        title: "Maniglioni e Supporti",
+        description: "Supporti e maniglioni per aumentare la sicurezza durante i movimenti quotidiani.",
+        image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Sedute e Accessori",
+        description: "Sedute, accessori e soluzioni pratiche per comfort e autonomia.",
+        image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&h=400&fit=crop&auto=format"
+      },
+      {
+        title: "Consulenza in Showroom",
+        description: "Supporto nella scelta e nella configurazione più adatta alle esigenze reali.",
+        image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&h=400&fit=crop&auto=format"
+      }
+    ],
+    features: [
+      "Soluzioni bagno in sicurezza selezionate",
+      "Integrazione discreta nel progetto d'interni",
+      "Supporto su configurazioni e necessità specifiche",
+      "Materiali affidabili e facili da pulire",
+      "Consulenza dedicata in showroom",
+    ]
+  },
 };
 
 // Sub-pages for Arredamento
@@ -421,6 +643,28 @@ const arredamentoSubPages: Record<string, CategoryData> = {
       "Cabine armadio completamente organizzate",
       "Comodini e cassettiere coordinate",
       "Tessuti e materiali premium di altissima qualità",
+    ]
+  },
+  complementi: {
+    title: "Complementi",
+    subtitle: "Dettagli che Definiscono lo Stile",
+    description: "Complementi d'arredo selezionati per completare ogni ambiente: superfici, materiali e dettagli che rendono il progetto davvero personale.",
+    heroImage: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1920&h=1080&fit=crop&auto=format",
+    introTitle: "Complementi d'Arredo: La Differenza Sta nei Dettagli",
+    introText: [
+      "Un progetto di interior non si chiude con i volumi principali: sono i complementi a rendere uno spazio coerente, accogliente e riconoscibile. Selezioniamo elementi che dialogano con materiali, colori e finiture, mantenendo uno stile essenziale e curato."
+    ],
+    detailTitle: "Coerenza, Materiali e Proporzioni",
+    detailText: [
+      "Ti aiutiamo a scegliere complementi e dettagli in modo equilibrato, evitando eccessi e mantenendo una linea estetica precisa su tutto l'ambiente."
+    ],
+    subCategories: [],
+    features: [
+      "Complementi coordinati con arredi e finiture",
+      "Scelta guidata in showroom",
+      "Soluzioni per living e zona notte",
+      "Dettagli funzionali e decorativi",
+      "Coerenza estetica del progetto",
     ]
   },
   lavanderia: {
